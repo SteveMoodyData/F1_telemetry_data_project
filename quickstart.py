@@ -15,10 +15,10 @@ from pathlib import Path
 # Add src to path
 sys.path.insert(0, str(Path(__file__).parent / 'src'))
 
-from ingestion.telemetry_loader import TelemetryLoader
-from processing.spark_processor import SparkProcessor
-from quality.telemetry_validator import TelemetryQualityValidator
-from ml.lap_time_predictor import LapTimeFeatureEngineer, LapTimePredictorModel
+from src.ingestion.telemetry_loader import TelemetryLoader
+from src.processing.spark_processor import SparkProcessor
+from src.quality.telemetry_validator import TelemetryQualityValidator
+from src.ml.lap_time_predictor import LapTimeFeatureEngineer, LapTimePredictorModel
 
 from sklearn.model_selection import train_test_split
 import warnings
